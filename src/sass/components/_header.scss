@@ -8,6 +8,29 @@
     line-height: 1.2;
 }
 
+.lang-name{
+    display: flex;
+    .drop-down-language{
+        position: relative;
+        &:hover .drop-down{
+            display: flex;
+            flex-direction: column;
+            img{
+                transform: rotate(180deg);
+            }
+            a{
+                color: #1E3173;
+                font-weight: 500;
+            }
+        }
+    }
+    .drop-down{
+        display: none;
+        position: absolute;
+        z-index: 10;
+    }
+}
+
 .nav__link-blue {
     font-weight: 600;
     font-size: 18px;
