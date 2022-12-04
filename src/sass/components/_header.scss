@@ -1,4 +1,41 @@
-.header{
-    background-color: red;
-    color: #fff;
+.header {
+    background: linear-gradient(102.5deg, #FFF6DA 0%, #FFDEF2 100%);
+}
+.header__logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.nav__link-blue {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    background-color: #1E3173;
+    border-radius: 24px;
+    padding: 9px 20px;
+    color: #FFFFFF;
+    &:hover{
+        color: #FFFFFF;
+    }
+}
+
+.nav__link-border {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    border: 2px solid #1E3173;
+    border-radius: 24px;
+    padding: 9px 20px;
+    color: #1E3173;
+    &:hover{
+        color: #1E3173;
+    }
+}
+
+.entry__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
 }
