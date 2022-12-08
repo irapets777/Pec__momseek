@@ -15,13 +15,54 @@
         &:hover .drop-down{
             display: flex;
             flex-direction: column;
-            img{
+            img:hover{
                 transform: rotate(180deg);
             }
             a{
                 color: #1E3173;
                 font-weight: 500;
             }
+            :first-child:hover{
+                color: #1E3173;
+                font-weight: 500;
+                &:hover{
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                }
+            }
+            :nth-child(2):hover{
+                color: #1E3173;
+                font-weight: 500;
+                &:hover{
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                }
+            }
+            :nth-child(3):hover{
+                color: #1E3173;
+                font-weight: 500;
+                &:hover{
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                }
+            }
+            :nth-child(4):hover{
+                color: #1E3173;
+                font-weight: 500;
+                &:hover{
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                }
+            }
+            :last-child:hover{
+                color: #1E3173;
+                font-weight: 500;
+                &:hover{
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                }
+            }
+         
         }
     }
     .drop-down{
@@ -61,4 +102,12 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 1.2;
+    color: #1E3173;
+    &:hover{
+        color: #1E3173;
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-weight: 700;
+        
+    }
 }
