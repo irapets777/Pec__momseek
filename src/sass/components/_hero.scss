@@ -1,6 +1,6 @@
 .hero {
     background: linear-gradient(102.5deg, #FFF6DA 0%, #FFDEF2 100%);
-    
+    padding-bottom: 60px;
 }
 
 .hero__title {
@@ -19,5 +19,45 @@
 .hero__img {
     margin-top: 86px;
 }
+
+.search{
+    padding-top: 52px;
+}
+
+.search__nany{
+    background: #FFFFFF;
+    border-radius: 32px;
+    border: none;
+    width: 80%;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.search__city {
+    background: #FFFFFF;
+    border-radius: 32px;
+    border: none;
+    padding: 10px;
+    width: 60%;
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 18px;
+}
+
+.hero__btn{
+    background: #1E3173;
+    border-radius: 32px;
+    padding: 5px 100px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.2;
+    &:hover{
+        color: #FFFFFF;
+    }
+}
+
 
 

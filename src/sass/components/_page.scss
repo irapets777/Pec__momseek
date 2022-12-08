@@ -1,39 +1,39 @@
-.nav__tabs {
-    .item {
-        width: 90px;
-        height: 40px;
-        border: 2px solid rgb(223, 12, 12);
-        margin: 12px;
-        text-align: center;
-        vertical-align: middle;
-        cursor: pointer;
-        transition: 0.4s;
-        &.active {
-            background-color: rgb(214, 157, 157);
-            color: #000;
-            transition: 0.8s;
-        }
+// .nav__tabs {
+//     .item {
+//         width: 90px;
+//         height: 40px;
+//         border: 2px solid rgb(223, 12, 12);
+//         margin: 12px;
+//         text-align: center;
+//         vertical-align: middle;
+//         cursor: pointer;
+//         transition: 0.4s;
+//         &.active {
+//             background-color: rgb(214, 157, 157);
+//             color: #000;
+//             transition: 0.8s;
+//         }
 
-    }
-}
+//     }
+// }
 
-.content__tabs {
-    .content {
-        border: 2px solid rgb(7, 7, 7);
-        margin: 12px;
-        width: 100%;
-        height: 60px;
-    }
+// .content__tabs {
+//     .content {
+//         border: 2px solid rgb(7, 7, 7);
+//         margin: 12px;
+//         width: 100%;
+//         height: 60px;
+//     }
 
-    :first-child{
-        background-color: rgb(143, 241, 134);
-    }
+//     :first-child{
+//         background-color: rgb(143, 241, 134);
+//     }
 
-    :last-child{
-        background-color: rgb(158, 96, 199);
-    }
+//     :last-child{
+//         background-color: rgb(158, 96, 199);
+//     }
 
-    :nth-child(2){
-        background-color: rgb(97, 176, 221);
-    }
-}
+//     :nth-child(2){
+//         background-color: rgb(97, 176, 221);
+//     }
+// }
