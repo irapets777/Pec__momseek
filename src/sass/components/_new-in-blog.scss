@@ -1,0 +1,73 @@
+.blog{
+    background: linear-gradient(102.5deg, #FFF6DA 0%, #FFDEF2 100%);
+    padding: 64px 100px;
+    &__title{
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+    }
+    &__menu{
+        padding: 14px 0 46px;
+        ul{
+            li{
+                padding-right: 26px;
+                a{
+                    font-family: 'Roboto';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 1.2;
+                    color: #1E3173;
+                    &:hover{
+                        color: #FFFFFF;
+                        background-color: #1E3173;
+                        border-radius: 24px;
+                        padding: 5px 20px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+.blog__img {
+    padding-bottom: 26px;
+    img{
+        width: 100%;
+        border-radius: 14px;
+    }
+}
+.blog__describe{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.blog__date{
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 22px;
+    color: #AAAAAA;
+}
+
+.blog__buttons {
+    a{
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 6px 14px;
+        border: 1px solid #1E3173;
+        border-radius: 20px;
+        color: #1E3173;
+        &:hover{
+            color: #1E3173;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}
