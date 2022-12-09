@@ -1,4 +1,151 @@
 .footer{
     background-color: black;
     color: #fff;
+    padding: 42px 54px;
+    height: 100%;
+    min-height: 220px;  
+    &__main{
+        @media screen and (max-width:768px){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__bottom{
+        @media screen and (max-width:768px){
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+    &__nav-item{
+        @media screen and (max-width:768px){
+            margin-bottom: 15px;
+        }
+    }
 }
+
+.footer__logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+
+.footer__item {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    padding-bottom: 20px;
+    @media screen and (max-width:768px){
+        white-space: nowrap;
+    }
+}
+
+.footer__nav{
+    padding-bottom: 42px;
+    @media screen and (max-width:768px){
+        padding: 0;
+    }
+    nav{
+        ul{
+            display: flex;
+            justify-content: end;
+            flex-wrap: wrap;
+            @media screen and (max-width:768px){
+                flex-direction: column;
+            }
+            li{
+                @media screen and (max-width:768px){
+                    margin-bottom: 15px;
+                }
+                a{
+                    font-family: 'Roboto';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 1.2;
+                    color: #FFFFFF;  
+                    padding-left: 42px;
+                    white-space: nowrap;
+                    &:hover{
+                        color: #FFFFFF;
+                    }
+                    @media screen and (max-width:991px){
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.lang-name{
+    display: flex;
+    .drop-down-language{
+        position: relative;
+        &:hover .drop-down{
+            display: flex;
+            flex-direction: column;
+            background-color: #000;
+            a{
+                color: #FFFFFF;
+                font-weight: 500;
+            }
+            :first-child:hover{
+                color: #FFFFFF;
+                font-weight: 500;
+                &:hover{
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                }
+            }
+            :nth-child(2):hover{
+                color: #FFFFFF;
+                font-weight: 500;
+                &:hover{
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                }
+            }
+            :nth-child(3):hover{
+                color: #FFFFFF;
+                font-weight: 500;
+                &:hover{
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                }
+            }
+            :nth-child(4):hover{
+                color: #FFFFFF;
+                font-weight: 500;
+                &:hover{
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                }
+            }
+            :last-child:hover{
+                color: #FFFFFF;
+                font-weight: 500;
+                &:hover{
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                }
+            }
+         
+        }
+        &:hover img{
+            cursor: pointer;
+            transform: rotate(180deg);
+        }
+
+    }
+    .drop-down{
+        display: none;
+        position: absolute;
+        z-index: 10;
+    }
+}
+
+
+
+

@@ -1,5 +1,6 @@
 .header {
     background: linear-gradient(102.5deg, #FFF6DA 0%, #FFDEF2 100%);
+    padding-top: 36px;
 }
 .header__logo {
     font-family: 'Raleway';
@@ -8,6 +9,8 @@
     line-height: 1.2;
 }
 
+
+
 .lang-name{
     display: flex;
     .drop-down-language{
@@ -15,9 +18,6 @@
         &:hover .drop-down{
             display: flex;
             flex-direction: column;
-            img:hover{
-                transform: rotate(180deg);
-            }
             a{
                 color: #1E3173;
                 font-weight: 500;
@@ -63,6 +63,10 @@
                 }
             }
          
+        }
+        &:hover img{
+            cursor: pointer;
+            transform: rotate(180deg);
         }
     }
     .drop-down{
