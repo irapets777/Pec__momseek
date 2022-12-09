@@ -44,6 +44,7 @@
 
 .footer__nav{
     padding-bottom: 42px;
+    justify-content: end;
     @media screen and (max-width:768px){
         padding: 0;
     }
@@ -145,7 +146,3 @@
         z-index: 10;
     }
 }
-
-
-
-
