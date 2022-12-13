@@ -4,39 +4,54 @@
     align-items: center;
     margin: 74px 0px 100px;
     font-family: 'Raleway';
-    background: #F5F5F5;
 }
 
+main{ 
+    width: 100%;
+    height: 100%;
+  
+}
 
+.heading{
+    position: absolute;
+    margin-top: -480px;
+    padding-left: 40px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    color: #FFFFFF;
 
-// .heading{
-//     position: absolute;
-//     top: 40px;
-//     left: 40px;
-//     font-weight: 700;
-//     font-size: 22px;
-//     line-height: 100%;
-//     color: #FFFFFF;
+}
 
-// }
-
-// .title{
-//     position: absolute;
-//     top: 80px;
-//     left: 40px;
-//     font-weight: 800;
-//     font-size: 64px;
-//     line-height: 100%;
-//     color: #FFFFFF;
-//     padding-right: 600px;
-//     padding-top: 30px;
+.title{
+    position: absolute;
+    margin-top: -350px;  
+    padding-left: 40px;
+    font-weight: 800; 
+    font-size: 64px;
+    line-height: 100%;
+    width: 50%;
+    color: #FFFFFF;
+    @media screen and (max-width:992px){
+        margin-top: -400px;
+        font-weight: 600; 
+        font-size: 50px;
+    }
     
-// }
-
+}
 
 .nav__tabs {
+    position: absolute;
+    margin-top: -120px;
+    padding-left: 40px;
+    z-index: 1;
+    @media screen and(max-width:992px){
+        margin-top: -140px;
+    }
     .item {
-        width: 350px;
+        width: 100%;
+        max-width: 350px;
+        height: 100%;
         max-height: 140px;
         padding: 20px;
         border-radius: 12px;
@@ -47,6 +62,7 @@
         vertical-align: middle;
         cursor: pointer;
         transition: 0.4s;
+        background-color: #FFFFFF;
 
         &.active {
             background-color: #FFFFFF;
@@ -63,11 +79,15 @@
 }
 
 .content__tabs {
+    display: flex;
+    justify-content: center;
     .content {
         border: 2px solid #1E3173;
-        margin: 12px;
-        width: 90%;
+        width: 50%;
+        padding: 20px;
         height: 100px;
+        text-align: center;
+        margin-top: 10px;
     }
 
     :first-child{

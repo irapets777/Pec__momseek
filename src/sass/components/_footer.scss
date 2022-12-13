@@ -84,7 +84,10 @@
     display: flex;
     .drop-down-language{
         position: relative;
-        &:hover .drop-down{
+        .drop-down-footer{
+            display: none;
+        }
+        &:hover .drop-down-footer{
             display: flex;
             flex-direction: column;
             background-color: #000;
