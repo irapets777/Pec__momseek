@@ -1,14 +1,8 @@
 .hero {
+    overflow-x: hidden;
     background: linear-gradient(102.5deg, #FFF6DA 0%, #FFDEF2 100%);
     padding-bottom: 60px;
-
-.search{
-        padding-top: 52px;
-        @media screen and (max-width: 576px){
-            justify-content: center;
-            flex-direction: column;
-        }
-    }
+    height: 100%;
 
     &__title{
         font-weight: 700;
@@ -26,59 +20,75 @@
     &__img{
         margin-top: 86px;
     }
- 
-}
 
+    .search{
+       gap: 10px;
+        padding-top: 52px;
+        @media screen and (max-width: 992px){
+          flex-direction: column;
+          align-items: center;
+        }
+        &__nany{
+            background: #FFFFFF;
+            border-radius: 32px;
+            border: none;
+            width: 100%;
+            padding: 20px 20px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 1.2;
+            appearance: none;
+            background-image: url('../img/input-arrow.svg');
+            background-repeat: no-repeat;
+            background-position: 95%;
+            @media screen and (max-width: 992px){
+               margin-bottom: 10px;
+               width: 130%;
+            }
+        }
 
-.search__nany{
-    background: #FFFFFF;
-    border-radius: 32px;
-    border: none;
-    width: 90%;
-    padding: 20px 20px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.2;
-    appearance: none;
-    background-image: url('../img/input-arrow.svg');
-    background-repeat: no-repeat;
-    background-position: 95%;
-
-}
-
-.search__city {
-    background: #FFFFFF;
-    border-radius: 32px;
-    border: none;
-    padding: 20px 60px;
-    width: 90%;
-    font-weight: 600;
-    line-height: 1.2;
-    font-size: 18px;
-    appearance: none;
-    background-image: url('../img/location-filled.svg'), url('../img/input-arrow.svg');
-    background-repeat: no-repeat;
-    background-position: 5%, 95%;
-  
-  
-}
-
-.hero__btn{
-    background: #1E3173;
-    border-radius: 32px;
-    padding: 12px 146px;
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 1.2;
-    &:hover{
-        color: #FFFFFF;
+        &__city {
+            background: #FFFFFF;
+            border-radius: 32px;
+            border: none;
+            padding: 20px 60px;
+            width: 100%;
+            font-weight: 600;
+            line-height: 1.2;
+            font-size: 18px;
+            appearance: none;
+            background-image: url('../img/location-filled.svg'), url('../img/input-arrow.svg');
+            background-repeat: no-repeat;
+            background-position: 5%, 95%;
+            @media screen and (max-width: 992px){
+                margin-bottom: 22px;
+                width: 120%;
+            }
+        }
+          
+        }
+        
+        .hero__btn{
+            background: #1E3173;
+            border-radius: 32px;
+            padding: 12px 146px;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 1.2;
+            &:hover{
+                color: #FFFFFF;
+            }
+            @media screen and (max-width:1090px){
+                padding: 12px 100px;   
+            }
+            @media screen and (max-width: 700px){
+                padding: 10px 60px; 
+            }
+        }
     }
-    @media screen and (max-width:1090px){
-        padding: 12px 100px;   
-    }
- 
-}
+
+
 
 
 

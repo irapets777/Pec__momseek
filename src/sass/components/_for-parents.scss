@@ -1,7 +1,9 @@
 .for__parents{
+    overflow-x: hidden;
     margin: 74px auto 100px;
     height: 515px;
-    width: 1210px;
+    max-width: 1210px;
+    width: 100%;
     background-image: url('../img/for-parents.png');
     border-radius: 12px;
     box-shadow: grey 0 0 10px 0;
@@ -34,6 +36,8 @@
         .box{
             max-height: 140px;
             max-width: 352px;
+            width: 30%;
+            max-height: fit-content;
             background-color: #1E3173;
             color: #fff;
             border-radius: 12px;
@@ -66,7 +70,7 @@
         }
     }
 
-    .content__tebs {
+    .content__tabs {
         display: flex;
         justify-content: center;
 

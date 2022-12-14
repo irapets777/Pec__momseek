@@ -19,3 +19,14 @@ $('.box').on('click', function() {
 
 })
 
+$('.item').on('click', function() {
+  $('.item').removeClass('active');
+  $(this).addClass('active');
+  let tabs = $(this).data( "tabs");
+
+  $('.contents').addClass('d-none');
+  $('.contents[data-tabs = ' + tabs + ']').removeClass('d-none');
+  $('.contents[data-tabs = ' + tabs + ']').addClass('d-block');
+
+})
+

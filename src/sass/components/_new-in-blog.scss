@@ -1,4 +1,5 @@
 .blog{
+    overflow-x: hidden;
     background: linear-gradient(102.5deg, #FFF6DA 0%, #FFDEF2 100%);
     padding: 64px 100px;
     &__title{
@@ -9,9 +10,20 @@
     }
     &__menu{
         padding: 14px 0 46px;
+        :nth-child(2){
+            white-space: nowrap;
+        }
+      
         ul{
+            @media screen and(max-width:450px){
+                display: flex;
+                flex-wrap: wrap;
+            }
             li{
                 padding-right: 26px;
+                @media screen and(max-width:450px){
+                    margin-top: 6px;
+                }
                 a{
                     font-family: 'Roboto';
                     font-weight: 400;
@@ -29,7 +41,20 @@
             }
         }
     }
+    .xmob{
+        @media screen and(max-width:600px){
+            width: 100%;
+        }
+    }
+    .mob{
+        @media screen and(max-width:600px){
+            display: none;
+        }
+
+    }
 }
+    
+
 
 .blog__img {
     padding-bottom: 26px;
@@ -55,6 +80,9 @@
 }
 
 .blog__buttons {
+    :last-child{
+        margin-left: 12px;
+    }
     a{
         font-family: 'Raleway';
         font-weight: 500;
@@ -69,5 +97,9 @@
             font-weight: 700;
             font-size: 18px;
         }
+    }
+    @media screen and(max-width:826px){
+        display: flex;
+        flex-wrap: wrap;
     }
 }
