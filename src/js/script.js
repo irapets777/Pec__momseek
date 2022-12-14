@@ -8,8 +8,8 @@
 //   });
 // });
 
-$('.item').on('click', function() {
-  $('.item').removeClass('active');
+$('.box').on('click', function() {
+  $('.box').removeClass('active');
   $(this).addClass('active');
   let tabs = $(this).data( "tabs");
 

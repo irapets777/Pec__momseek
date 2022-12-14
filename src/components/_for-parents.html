@@ -2,7 +2,7 @@
     <div class="conatiner">
         <div class="row">
             <div class="col-12">
-                <p>Для батьків</p>
+                <p class="above-title">Для батьків</p>
             </div>
             <div class="col-12">
                 <h3>
@@ -12,26 +12,31 @@
             </div>
         </div>
         <section class="template">
-            <div class="col-4 box">
+            <div id="tab1" class="col-4  box active" data-tabs="1">
                 <h4>
                     Розмістіть ваше
                     оголошення
                 </h4>
                 <p class="template__p">Розкажіть саме про ваші потреби та завдання</p>
             </div>
-            <div class="col-4 box">
+            <div id="tab2" class="col-4  box active" data-tabs="2">
                 <h4>
-                    Перегляньте анкети нянь поблизу
+                    Перегляньте анкети <br> нянь поблизу
                 </h4>
                 <p class="template__p">та проведіть співбесіду з тими хто відповідає вашим вимогам </p>
             </div>
-            <div class="col-4 box">
+            <div id="tab3" class="col-4  box active" data-tabs="3">
                 <h4>
                     Найміть свою ідеальну няню
                 </h4>
                 <p class="template__p">Обговоріть деталі, сформуйте договір прямо на  сайті</p>
             </div>
         </section>
+        <div class="content__tabs">
+            <div class="content d-none" data-tabs="1">Додати оголошення</div>
+            <div class="content d-none" data-tabs="2">Няні поблизу</div>
+            <div class="content d-none" data-tabs="3">Ваша ідеальна няня</div>
+        </div>
     </div>
 </section>
 
