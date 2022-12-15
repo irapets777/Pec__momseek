@@ -9,6 +9,10 @@
         font-size: 56px;
         line-height: 120%;
         margin-top: 95px;
+        @media screen and (max-width: 500px){
+            font-weight: 700;
+            font-size: 48px;
+        }
     }
 
     &__describe{
@@ -45,6 +49,12 @@
                margin-bottom: 10px;
                width: 130%;
             }
+
+            @media screen and (max-width: 530px){
+                font-weight: 600;
+                font-size: 14px;
+                width: 190%;
+            }
         }
 
         &__city {
@@ -63,6 +73,12 @@
             @media screen and (max-width: 992px){
                 margin-bottom: 22px;
                 width: 120%;
+            }
+
+            @media screen and (max-width: 530px){
+                font-weight: 600;
+                font-size: 14px;
+                width: 170%;
             }
         }
           
@@ -84,6 +100,11 @@
             }
             @media screen and (max-width: 700px){
                 padding: 10px 60px; 
+            }
+
+            @media screen and (max-width: 530px){
+                font-weight: 600;
+                font-size: 14px;
             }
         }
     }

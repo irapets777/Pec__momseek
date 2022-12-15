@@ -90,6 +90,7 @@
     .contents__tabs {
         display: flex;
         justify-content: center;
+        cursor: pointer;
 
         .contents {
             border: 2px solid #000000;

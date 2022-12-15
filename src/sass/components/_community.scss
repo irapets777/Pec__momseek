@@ -33,6 +33,12 @@
             font-size: 28px;
             line-height: 100%;
             color: #000000;
+
+            @media screen and(max-width:500px){
+                font-weight: 600;
+                font-size: 20px;
+            }
+            
         }
         .community__info-date{
             font-family: 'Roboto';
@@ -41,6 +47,9 @@
             line-height: 120%;        
             color: #000000; 
             margin-top: 30px;
+            @media screen and(max-width:992px){
+                margin-top: 10px;
+            }
         }
 
         .community__info-questions{
@@ -50,9 +59,14 @@
             line-height: 120%;
             color: #1E3173;
             padding-right: 20px;
+            cursor: pointer;
             &:hover{
                 color: #8392ce;
                 transition: 0.4s;
+            }
+            @media screen and(max-width:992px){
+                font-weight: 500;
+                font-size: 18px;
             }
         }
         .community__info-text{
@@ -63,6 +77,9 @@
             color: #000000;
             margin-top: 30px;
             padding: 0px 60px 0px 16px;
+            @media screen and(max-width:992px){
+                display: none;
+            }
         }
 
         .community__info-item{
@@ -80,6 +97,7 @@
                 line-height: 120%;
                 color: #1E3173;
                 white-space: nowrap;
+                cursor: pointer;
             }
             .item-top{
                 padding: 0px 18px 0px 12px;
@@ -98,6 +116,10 @@
                 line-height: 120%;
                 text-decoration-line: underline;
                 color: #000000;
+                cursor: pointer;
+                &:hover{
+                    color: #a8a6a6;
+                }
                
                 @media screen and (max-width:1094px){
                     margin-top: 10px;
@@ -123,6 +145,14 @@
             align-items: center;
             text-align: center;
             color: #1E3173;
+            &:hover{
+                background-color: rgb(96, 125, 151);
+                color: #061858;
+            }
+
+            @media screen and(max-width:768px){
+                font-size: 18px;
+            }
         }
     }
 }
